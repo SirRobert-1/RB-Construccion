@@ -1,0 +1,24 @@
+<template>
+  <section class="hero pt-28 bg-blue text-white">
+    <h1 class="hero__title flex justify-center mb-16">
+      Trabajos con más de 15 años de experiencia
+    </h1>
+    <div class="flex items-center mb-8">
+      <img src="../assets/infoPersonal.svg" alt="" />
+      <p class="ml-2">Técnico Raúl Basilio</p>
+    </div>
+    <div class="flex items-center mb-8">
+      <img src="../assets/numWhats.svg" alt="" />
+      <p class="ml-2">22 82 29 99 92</p>
+    </div>
+    <div class="flex items-center mb-8">
+      <img src="../assets/correo.svg" alt="" />
+      <p class="ml-2">rawl.guzman7@gmail.com</p>
+    </div>
+    <div class="flex items-center mb-14">
+      <img src="../assets/ubicacion.svg" alt="" />
+      <p class="ml-2">C.P. 91210</p>
+    </div>
+    <img class="mx-auto mb-14" src="../assets/codeQr.svg" alt="" />
+  </section>
+</template>
