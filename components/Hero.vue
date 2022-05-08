@@ -1,6 +1,19 @@
 <template>
-  <section class="hero pt-28 bg-blue text-white">
-    <h1 class="hero__title flex justify-center mb-16">
+  <section
+    class="
+      hero
+      pt-28
+      xl:pt-0
+      bg-blue
+      w-full
+      xl:mx-5
+      text-white
+      flex flex-col
+      justify-center
+      items-center
+    "
+  >
+    <h1 class="hero__title mb-16 text-center">
       Trabajos con más de 15 años de experiencia
     </h1>
     <div class="flex items-center mb-8">

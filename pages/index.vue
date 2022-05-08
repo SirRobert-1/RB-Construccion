@@ -1,21 +1,21 @@
 <template>
-  <div class="index bg-blue relative flex flex-col items-center">
+  <div class="index bg-blue relative flex flex-col items-center xl:px-10">
     <img
       class="hero_logo left-0 right-0 mx-auto -mt-20 absolute"
       src="../assets/LogoCirculo.svg"
       alt=""
     />
-    <div class="flex flex-col md:flex-row items-center">
+    <div class="flex flex-col xl:flex-row items-center">
       <Hero v-if="this.vistaActiva == 'contacto'" />
       <button
         v-if="this.vistaActiva == 'contacto'"
         @click="cambiarVista('trabajo')"
-        class="hero__p flex justify-center text-white md:hidden"
+        class="hero__p flex justify-center text-white xl:hidden"
       >
         Ver trabajos
       </button>
       <Trabajos v-if="this.vistaActiva == 'trabajo'" />
-      <TrabajosDesktop />
+      <TrabajosDesktop class="hidden xl:block" />
       <button
         v-if="this.vistaActiva == 'trabajo'"
         @click="cambiarVista('contacto')"
