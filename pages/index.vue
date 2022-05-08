@@ -5,22 +5,25 @@
       src="../assets/LogoCirculo.svg"
       alt=""
     />
-    <Hero v-if="this.vistaActiva == 'contacto'" />
-    <button
-      v-if="this.vistaActiva == 'contacto'"
-      @click="cambiarVista('trabajo')"
-      class="hero__p flex justify-center text-white"
-    >
-      Ver trabajos
-    </button>
-    <Trabajos v-if="this.vistaActiva == 'trabajo'" />
-    <button
-      v-if="this.vistaActiva == 'trabajo'"
-      @click="cambiarVista('contacto')"
-      class="hero__p flex justify-center text-white -mt-2"
-    >
-      Ver contacto
-    </button>
+    <div class="flex flex-col md:flex-row items-center">
+      <Hero v-if="this.vistaActiva == 'contacto'" />
+      <button
+        v-if="this.vistaActiva == 'contacto'"
+        @click="cambiarVista('trabajo')"
+        class="hero__p flex justify-center text-white md:hidden"
+      >
+        Ver trabajos
+      </button>
+      <Trabajos v-if="this.vistaActiva == 'trabajo'" />
+      <TrabajosDesktop />
+      <button
+        v-if="this.vistaActiva == 'trabajo'"
+        @click="cambiarVista('contacto')"
+        class="hero__p flex justify-center text-white -mt-2"
+      >
+        Ver contacto
+      </button>
+    </div>
   </div>
 </template>
 
