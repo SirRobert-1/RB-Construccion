@@ -12,6 +12,15 @@
     <ul v-if="vistaActiva" class="my-5">
       <li v-for="(servicio, index) of info" :key="index">{{ servicio }}</li>
     </ul>
+    <div v-if="vistaActiva" class="flex flex-wrap justify-around">
+      <img
+        :src="servicio"
+        v-for="(servicio, index) of images"
+        :key="index"
+        class="w-20 h-20 object-cover mb-5"
+      />
+    </div>
+
     <div
       class="flex flex-col justify-center items-center"
       v-if="!vistaActiva"
@@ -52,6 +61,10 @@ export default {
       required: true,
     },
     info: {
+      type: Array,
+      required: true,
+    },
+    images: {
       type: Array,
       required: true,
     },
