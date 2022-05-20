@@ -22,7 +22,7 @@
     </div>
     <div class="flex items-center mb-8">
       <img src="../assets/numWhats.svg" alt="" />
-      <p class="ml-2">22 82 29 99 92</p>
+      <a href="https://wa.me/2282299992" target="_blank" class="ml-2">22 82 29 99 92</a>
     </div>
     <div class="flex items-center mb-8">
       <img src="../assets/correo.svg" alt="" />
