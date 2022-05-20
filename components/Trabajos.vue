@@ -123,7 +123,7 @@ export default {
               servicio: 'Bomba-cisterna-tinaco',
               images: [bombaTinaco, bombaTinaco2],
             },
-            { servicio: 'Aguas pluviales' },
+            { servicio: 'Aguas pluviales', images: [] },
           ],
         },
         {
@@ -153,15 +153,15 @@ export default {
           titulo: 'Pintura',
           info: [
             { servicio: 'Reparacion de superficies', images: [reparacionSup] },
-            { servicio: 'Lijado' },
+            { servicio: 'Lijado', images: [] },
             {
               servicio: 'Preparación de colores',
               images: [pintura2, pintura3, pintura4],
             },
-            { servicio: 'Impermeabilización' },
-            { servicio: 'Revestimiento de paredes y techos' },
-            { servicio: 'Fibrado y asfáltico' },
-            { servicio: 'Reparación de grietas y agujeros' },
+            { servicio: 'Impermeabilización', images: [] },
+            { servicio: 'Revestimiento de paredes y techos', images: [] },
+            { servicio: 'Fibrado y asfáltico', images: [] },
+            { servicio: 'Reparación de grietas y agujeros', images: [] },
           ],
         },
         {

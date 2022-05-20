@@ -8,7 +8,18 @@
         :class="
           servicioActivo == servicio.id ? 'bg-white  text-blue ' : 'bg-blue '
         "
-        class="mx-1 text-white px-5 py-2 border border-blue rounded-full flex justify-center items-center w-48"
+        class="
+          mx-1
+          text-white
+          px-5
+          py-2
+          border border-blue
+          rounded-full
+          flex
+          justify-center
+          items-center
+          w-48
+        "
         v-for="(servicio, index) of servicios"
         :key="index"
       >
@@ -22,19 +33,23 @@
     </div>
     <div>
       <ul class="my-5">
-        <li v-for="(info, index) of infoActiva[0]" :key="index">
-          {{ info }}
+        <li
+          v-for="(info, index) of infoActiva[0]"
+          :key="index"
+          class="titulo text-center my-10"
+        >
+          {{ info.servicio }}
+          <div class="flex imgContenedor my-2">
+            <img
+              class="imgServicioDesktop object-cover rounded-xl"
+              :src="image"
+              alt=""
+              v-for="(image, index) of info.images"
+              :key="index"
+            />
+          </div>
         </li>
       </ul>
-    </div>
-    <div class="flex flex-wrap justify-around">
-      <img
-        class="mx-2 w-20 h-20 object-cover"
-        :src="image"
-        alt=""
-        v-for="(image, index) of imagesActivas[0]"
-        :key="index"
-      />
     </div>
   </section>
 </template>
@@ -96,39 +111,47 @@ import buenFuncionamiento from '@/assets/Rb/buenFuncionamiento.jpg'
 import buenFuncionamiento2 from '@/assets/Rb/buenFuncionamiento2.jpg'
 export default {
   created() {
-    this.infoActiva.push(this.default),
-      this.imagesActivas.push(this.defaultImages)
+    this.infoActiva.push(this.default)
   },
   data() {
     return {
       servicioActivo: 'electrico',
       infoActiva: [],
       default: [
-        'Baja tensión',
-        'Instalación residencial',
-        'Instalación tipo industrial',
-        'Tablero de distibución',
-        'Conocimiento en manejo de circuitos',
+        {
+          servicio: 'Baja tension',
+          images: [bajaTension, bajaTension2, bajaTension3],
+        },
+        {
+          servicio: 'Instalación residencial',
+          images: [
+            instalacionRes,
+            instalacionRes2,
+            instalacionRes3,
+            instalacionRes4,
+          ],
+        },
+        {
+          servicio: 'Instalación tipo industrial',
+          images: [
+            instalacionIndus,
+            instalacionIndus2,
+            instalacionIndus3,
+            instalacionIndus4,
+            instalacionIndus5,
+          ],
+        },
+        {
+          servicio: 'Tablero de distibución',
+          images: [tableroDist, tableroDist2],
+        },
+        {
+          servicio: 'Conocimiento en manejo de circuitos',
+          images: [manejoCircuitos, manejoCircuitos2],
+        },
       ],
       imagesActivas: [],
-      defaultImages: [
-        bajaTension,
-        bajaTension2,
-        bajaTension3,
-        instalacionRes,
-        instalacionRes2,
-        instalacionRes3,
-        instalacionRes4,
-        instalacionIndus,
-        instalacionIndus2,
-        instalacionIndus3,
-        instalacionIndus4,
-        instalacionIndus5,
-        tableroDist,
-        tableroDist2,
-        manejoCircuitos,
-        manejoCircuitos2,
-      ],
+
       servicios: [
         {
           id: 'electrico',
@@ -192,7 +215,7 @@ export default {
               servicio: 'Bomba-cisterna-tinaco',
               images: [bombaTinaco, bombaTinaco2],
             },
-            { servicio: 'Aguas pluviales' },
+            { servicio: 'Aguas pluviales', images: [] },
           ],
         },
         {
@@ -226,15 +249,15 @@ export default {
           titulo: 'Pintura',
           info: [
             { servicio: 'Reparacion de superficies', images: [reparacionSup] },
-            { servicio: 'Lijado' },
+            { servicio: 'Lijado', images: [] },
             {
               servicio: 'Preparación de colores',
               images: [pintura2, pintura3, pintura4],
             },
-            { servicio: 'Impermeabilización' },
-            { servicio: 'Revestimiento de paredes y techos' },
-            { servicio: 'Fibrado y asfáltico' },
-            { servicio: 'Reparación de grietas y agujeros' },
+            { servicio: 'Impermeabilización', images: [] },
+            { servicio: 'Revestimiento de paredes y techos', images: [] },
+            { servicio: 'Fibrado y asfáltico', images: [] },
+            { servicio: 'Reparación de grietas y agujeros', images: [] },
           ],
         },
         {
@@ -268,8 +291,35 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+
+<style lang="scss" >
 .cardDesktop {
-  height: 494px;
+  height: 100%;
+  width: 1000px;
+}
+
+.titulo {
+  font-size: 20px;
+}
+
+.imgContenedor {
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+.imgContenedor::-webkit-scrollbar {
+  background-color: #cccccc;
+  height: 5px;
+  border-radius: 10px;
+}
+.imgContenedor::-webkit-scrollbar-thumb {
+  background-color: #06113C;
+  border-radius: 10px;
+}
+
+.imgServicioDesktop {
+  height: 300px;
+  margin: 0rem 1rem 2rem 1rem;
+  object-fit: cover;
 }
 </style>
