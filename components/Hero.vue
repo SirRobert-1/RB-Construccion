@@ -32,6 +32,21 @@
       <img src="../assets/ubicacion.svg" alt="" />
       <p class="ml-2">C.P. 91210</p>
     </div>
-    <img class="mx-auto mb-14" src="../assets/codeQr.svg" alt="" />
+    <img
+      class="mx-auto mb-14 cursor-pointer"
+      src="../assets/codeQr.svg"
+      @click="ir('qr')"
+      alt=""
+    />
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    ir(url) {
+      this.$router.push(url)
+    },
+  },
+}
+</script>
