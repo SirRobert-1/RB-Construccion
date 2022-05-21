@@ -8,18 +8,7 @@
         :class="
           servicioActivo == servicio.id ? 'bg-white  text-blue ' : 'bg-blue '
         "
-        class="
-          mx-1
-          text-white
-          px-5
-          py-2
-          border border-blue
-          rounded-full
-          flex
-          justify-center
-          items-center
-          w-48
-        "
+        class="mx-1 text-white px-5 py-2 border border-blue rounded-full flex justify-center items-center w-48"
         v-for="(servicio, index) of servicios"
         :key="index"
       >
@@ -82,14 +71,12 @@ import manejoCircuitos from '@/assets/Rb/manejoCircuitos.jpg'
 import manejoCircuitos2 from '@/assets/Rb/manejoCircuitos2.jpg'
 import aguaConsumo from '@/assets/Rb/aguaConsumo.jpg'
 import aguaConsumo2 from '@/assets/Rb/aguaConsumo.jpg'
-import aguasResiduo from '@/assets/Rb/aguasResiduo.jpg'
 import aguasResiduo2 from '@/assets/Rb/aguasResiduo2.jpg'
 import calentadorSolar from '@/assets/Rb/calentadorSolar.jpg'
 import calentadorSolar2 from '@/assets/Rb/calentadorSolar2.jpg'
 import boiler from '@/assets/Rb/boiler.jpeg'
 import boiler2 from '@/assets/Rb/boiler2.jpg'
 import bombaTinaco from '@/assets/Rb/bombaTinaco.jpg'
-import bombaTinaco2 from '@/assets/Rb/bombaTinaco2.jpg'
 import anivelamiento from '@/assets/Rb/anivelamiento.jpg'
 import anivelamiento2 from '@/assets/Rb/anivelamiento2.jpg'
 import anivelamiento3 from '@/assets/Rb/anivelamiento3.jpg'
@@ -102,13 +89,32 @@ import pisosAzulejos from '@/assets/Rb/pisosAzulejos.jpg'
 import pisosAzulejos2 from '@/assets/Rb/pisosAzulejos2.jpg'
 import pisosAzulejos3 from '@/assets/Rb/pisosAzulejos3.jpg'
 import reparacionSup from '@/assets/Rb/reparacionSup.jpg'
-import pintura2 from '@/assets/Rb/pintura2.jpg'
+import lijado from '@/assets/Rb/lijado.jpg'
 import pintura3 from '@/assets/Rb/pintura3.jpg'
 import pintura4 from '@/assets/Rb/pintura4.jpg'
 import equiposNuevos from '@/assets/Rb/equiposNuevos.jpg'
 import equiposNuevos2 from '@/assets/Rb/equiposNuevos2.jpg'
 import buenFuncionamiento from '@/assets/Rb/buenFuncionamiento.jpg'
 import buenFuncionamiento2 from '@/assets/Rb/buenFuncionamiento2.jpg'
+import aguasResiduo3 from '@/assets/Rb/aguasResiduo3.jpg'
+import aguasResiduo4 from '@/assets/Rb/aguasResiduo4.jpg'
+import anivelamiento4 from '@/assets/Rb/anivelamiento4.jpg'
+import anivelamiento5 from '@/assets/Rb/anivelamiento5.jpg'
+import anivelamiento6 from '@/assets/Rb/anivelamiento6.jpg'
+import calentadorSolar3 from '@/assets/Rb/calentadorSolar3.jpg'
+import consResidencia4 from '@/assets/Rb/consResidencia4.jpg'
+import consResidencia5 from '@/assets/Rb/consResidencia5.jpg'
+import consResidencia6 from '@/assets/Rb/consResidencia6.jpg'
+import consResidencia7 from '@/assets/Rb/consResidencia7.jpg'
+import equiposNuevos3 from '@/assets/Rb/equiposNuevos3.jpg'
+import equiposNuevos4 from '@/assets/Rb/equiposNuevos4.jpg'
+import equiposNuevos5 from '@/assets/RB/equiposNuevos5.jpg'
+import tableroDist3 from '@/assets/Rb/tableroDist3.jpg'
+import hidroPres from '@/assets/Rb/hidroPres.jpg'
+import hidroPres1 from '@/assets/Rb/hidroPres1.jpg'
+import hidroPres2 from '@/assets/Rb/hidroPres2.jpg'
+import hidroPres3 from '@/assets/Rb/hidroPres3.jpg'
+import hidroPres4 from '@/assets/Rb/hidroPres4.jpg'
 export default {
   created() {
     this.infoActiva.push(this.default)
@@ -143,7 +149,7 @@ export default {
         },
         {
           servicio: 'Tablero de distibución',
-          images: [tableroDist, tableroDist2],
+          images: [tableroDist, tableroDist2, tableroDist3],
         },
         {
           servicio: 'Conocimiento en manejo de circuitos',
@@ -184,7 +190,7 @@ export default {
             },
             {
               servicio: 'Tablero de distibución',
-              images: [tableroDist, tableroDist2],
+              images: [tableroDist, tableroDist2, tableroDist3],
             },
             {
               servicio: 'Conocimiento en manejo de circuitos',
@@ -204,16 +210,26 @@ export default {
             },
             {
               servicio: 'Evacuación de aguas residuales',
-              images: [aguasResiduo, aguasResiduo2],
+              images: [aguasResiduo2, aguasResiduo3, aguasResiduo4],
             },
             {
               servicio: 'Calentador solar',
-              images: [calentadorSolar, calentadorSolar2],
+              images: [calentadorSolar, calentadorSolar2, calentadorSolar3],
             },
             { servicio: 'Mantenimiento a boiler', images: [boiler, boiler2] },
             {
               servicio: 'Bomba-cisterna-tinaco',
-              images: [bombaTinaco, bombaTinaco2],
+              images: [bombaTinaco],
+            },
+            {
+              servicio: 'Hidroneumáticos y presurizador',
+              images: [
+                hidroPres,
+                hidroPres1,
+                hidroPres2,
+                hidroPres3,
+                hidroPres4,
+              ],
             },
             { servicio: 'Aguas pluviales', images: [] },
           ],
@@ -226,7 +242,14 @@ export default {
           info: [
             {
               servicio: 'Anivelamiento de terreno',
-              images: [anivelamiento, anivelamiento2, anivelamiento3],
+              images: [
+                anivelamiento,
+                anivelamiento2,
+                anivelamiento3,
+                anivelamiento4,
+                anivelamiento5,
+                anivelamiento6,
+              ],
             },
             {
               servicio: 'Remodelación y ampliaciones',
@@ -234,7 +257,15 @@ export default {
             },
             {
               servicio: 'Construcción residencial',
-              images: [consResidencia, consResidencia2, consResidencia3],
+              images: [
+                consResidencia,
+                consResidencia2,
+                consResidencia3,
+                consResidencia4,
+                consResidencia5,
+                consResidencia6,
+                consResidencia7,
+              ],
             },
             {
               servicio: 'Colocación de pisos y azulejos',
@@ -249,10 +280,10 @@ export default {
           titulo: 'Pintura',
           info: [
             { servicio: 'Reparacion de superficies', images: [reparacionSup] },
-            { servicio: 'Lijado', images: [] },
+            { servicio: 'Lijado', images: [lijado] },
             {
               servicio: 'Preparación de colores',
-              images: [pintura2, pintura3, pintura4],
+              images: [pintura3, pintura4],
             },
             { servicio: 'Impermeabilización', images: [] },
             { servicio: 'Revestimiento de paredes y techos', images: [] },
@@ -268,7 +299,13 @@ export default {
           info: [
             {
               servicio: 'Instalación de equipos nuevos',
-              images: [equiposNuevos, equiposNuevos2],
+              images: [
+                equiposNuevos,
+                equiposNuevos2,
+                equiposNuevos3,
+                equiposNuevos4,
+                equiposNuevos5,
+              ],
             },
             {
               servicio: 'Revisión de buen funcionamiento de A.C.',
@@ -291,8 +328,7 @@ export default {
 }
 </script>
 
-
-<style lang="scss" >
+<style lang="scss">
 .cardDesktop {
   height: 100%;
   width: 1000px;
@@ -313,7 +349,7 @@ export default {
   border-radius: 10px;
 }
 .imgContenedor::-webkit-scrollbar-thumb {
-  background-color: #06113C;
+  background-color: #06113c;
   border-radius: 10px;
 }
 
