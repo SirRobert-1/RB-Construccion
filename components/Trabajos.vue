@@ -128,7 +128,7 @@ export default {
             },
             {
               servicio: 'Evacuación de aguas residuales',
-              images: [aguasResiduo2, aguasResiduo3, aguasResiduo4],
+              images: [aguasResiduo3, aguasResiduo4],
             },
             {
               servicio: 'Calentador solar',
