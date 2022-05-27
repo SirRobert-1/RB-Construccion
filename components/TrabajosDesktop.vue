@@ -70,7 +70,7 @@ import tableroDist2 from '@/assets/Rb/tableroDist2.jpg'
 import manejoCircuitos from '@/assets/Rb/manejoCircuitos.jpg'
 import manejoCircuitos2 from '@/assets/Rb/manejoCircuitos2.jpg'
 import aguaConsumo from '@/assets/Rb/aguaConsumo.jpg'
-import aguaConsumo2 from '@/assets/Rb/aguaConsumo.jpg'
+import aguaConsumo2 from '@/assets/Rb/aguaConsumo2.jpg'
 import aguasResiduo2 from '@/assets/Rb/aguasResiduo2.jpg'
 import calentadorSolar from '@/assets/Rb/calentadorSolar.jpg'
 import calentadorSolar2 from '@/assets/Rb/calentadorSolar2.jpg'
@@ -108,7 +108,6 @@ import consResidencia6 from '@/assets/Rb/consResidencia6.jpg'
 import consResidencia7 from '@/assets/Rb/consResidencia7.jpg'
 import equiposNuevos3 from '@/assets/Rb/equiposNuevos3.jpg'
 import equiposNuevos4 from '@/assets/Rb/equiposNuevos4.jpg'
-import equiposNuevos5 from '@/assets/RB/equiposNuevos5.jpg'
 import tableroDist3 from '@/assets/Rb/tableroDist3.jpg'
 import hidroPres from '@/assets/Rb/hidroPres.jpg'
 import hidroPres1 from '@/assets/Rb/hidroPres1.jpg'
@@ -210,7 +209,7 @@ export default {
             },
             {
               servicio: 'Evacuación de aguas residuales',
-              images: [aguasResiduo2, aguasResiduo3, aguasResiduo4],
+              images: [aguasResiduo3, aguasResiduo4],
             },
             {
               servicio: 'Calentador solar',
@@ -304,7 +303,6 @@ export default {
                 equiposNuevos2,
                 equiposNuevos3,
                 equiposNuevos4,
-                equiposNuevos5,
               ],
             },
             {
