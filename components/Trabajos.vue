@@ -77,6 +77,9 @@ import hidroPres1 from '@/assets/Rb/hidroPres1.jpg'
 import hidroPres2 from '@/assets/Rb/hidroPres2.jpg'
 import hidroPres3 from '@/assets/Rb/hidroPres3.jpg'
 import hidroPres4 from '@/assets/Rb/hidroPres4.jpg'
+import asfaltico from '@/assets/Rb/asfaltico.jpg'
+import imper from '@/assets/Rb/imper.jpg'
+import repGrietas from '@/assets/Rb/repGrietas.jpg'
 export default {
   data() {
     return {
@@ -199,10 +202,13 @@ export default {
               servicio: 'Preparación de colores',
               images: [pintura3, pintura4],
             },
-            { servicio: 'Impermeabilización', images: [] },
+            { servicio: 'Impermeabilización', images: [imper] },
             { servicio: 'Revestimiento de paredes y techos', images: [] },
-            { servicio: 'Fibrado y asfáltico', images: [] },
-            { servicio: 'Reparación de grietas y agujeros', images: [] },
+            { servicio: 'Fibrado y asfáltico', images: [asfaltico] },
+            {
+              servicio: 'Reparación de grietas y agujeros',
+              images: [repGrietas],
+            },
           ],
         },
         {
