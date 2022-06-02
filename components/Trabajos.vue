@@ -80,6 +80,8 @@ import hidroPres4 from '@/assets/Rb/hidroPres4.jpg'
 import asfaltico from '@/assets/Rb/asfaltico.jpg'
 import imper from '@/assets/Rb/imper.jpg'
 import repGrietas from '@/assets/Rb/repGrietas.jpg'
+import muros from '@/assets/Rb/muros.jpg'
+import muros1 from '@/assets/Rb/muros1.jpg'
 export default {
   data() {
     return {
@@ -203,7 +205,7 @@ export default {
               images: [pintura3, pintura4],
             },
             { servicio: 'Impermeabilización', images: [imper] },
-            { servicio: 'Revestimiento de paredes y techos', images: [] },
+            { servicio: 'Muros de tablaroca', images: [muros, muros1] },
             { servicio: 'Fibrado y asfáltico', images: [asfaltico] },
             {
               servicio: 'Reparación de grietas y agujeros',
