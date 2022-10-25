@@ -1,28 +1,19 @@
 <template>
   <section
-    class="
-      hero
-      pt-28
-      xl:pt-0
-      bg-blue
-      w-full
-      xl:mx-5
-      text-white
-      flex flex-col
-      justify-center
-      items-center
-    "
+    class="hero pt-28 xl:pt-0 bg-blue w-full xl:mx-5 text-white flex flex-col justify-center items-center"
   >
     <h1 class="hero__title mb-16 text-center">
       Trabajos con más de 15 años de experiencia
     </h1>
     <div class="flex items-center mb-8">
       <img src="../assets/infoPersonal.svg" alt="" />
-      <p class="ml-2">Técnico Raúl Basilio</p>
+      <p class="ml-2 text-center">Técnico Especializado Raúl Basilio</p>
     </div>
     <div class="flex items-center mb-8">
       <img src="../assets/numWhats.svg" alt="" />
-      <a href="https://wa.me/2282299992" target="_blank" class="ml-2">22 82 29 99 92</a>
+      <a href="https://wa.me/2282299992" target="_blank" class="ml-2"
+        >22 82 29 99 92</a
+      >
     </div>
     <div class="flex items-center mb-8">
       <img src="../assets/correo.svg" alt="" />
